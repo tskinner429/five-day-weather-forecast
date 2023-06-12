@@ -1,6 +1,4 @@
 const apiKey = "2543f7025ca129c8c2d107d815218354"
-//app should now run
-//app is  functional
 
 // Function to handle form submission and fetch weather data
 function getWeatherForecast(cityName) {
@@ -70,3 +68,5 @@ searchBtn.addEventListener('click', function(event) {
   const city = cityInput.value;
   getWeatherForecast(city)
 });
+
+getWeatherForecast("washington dc")
