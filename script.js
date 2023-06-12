@@ -4,7 +4,7 @@ const apiKey = "2543f7025ca129c8c2d107d815218354"
 function getWeatherForecast(cityName) {
   // Clear previous forecast data
   // Fetch weather forecast data
-  const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`;
   fetch(apiUrl)
     .then((res) => {
       return res.json()
